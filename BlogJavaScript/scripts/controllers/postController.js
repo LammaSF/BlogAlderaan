@@ -17,10 +17,10 @@ class PostController {
             return;
         }
 
-        if (requestData.content.length < 50) {
-            showPopup('error', "Post content must consist of atleast 50 symbols.");
-            return;
-        }
+       // if (requestData.content.length < 10) {
+        //    showPopup('error', "Post content must consist of atleast 10 symbols.");
+        //    return;
+      //  }
 
         let requestUrl = this._baseServiceUrl;
 
