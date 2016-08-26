@@ -175,21 +175,20 @@ header {
 }
 
 .blog-title {
-    width: 120px;
     font: 54px Oswald;
     font-weight: 600;
     margin: 0 auto 50px;
     color: #565656;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 8px solid #019c8c;
+    border-bottom: 8px solid #e69b2e;
 }
 
 .sidebar {
     float: left;
     width: 20%;
     height: 100%;
-    background-color: #06C0AB;
+    background-color: #e69b2e;
     color: white;
     font: 32px Lato;
     font-weight: 100;
@@ -203,6 +202,10 @@ header {
 .logo {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.logo img{
+    width: 70%;
 }
 
 .single-menu-element-link {
@@ -227,7 +230,7 @@ header {
 
 .single-menu-element:hover {
     font-weight: 900;
-    background-color: #019c8c;
+    background-color: #6B7276;
     height: 40px;
     line-height: 32px;
     transition: background 0.7s ease, padding 0.5s linear;
