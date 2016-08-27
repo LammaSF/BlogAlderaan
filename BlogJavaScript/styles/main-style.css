@@ -15,6 +15,7 @@ a {
 .title {
     font: 32px Oswald;
     font-weight: 600;
+    width: 80%;
 }
 
 .subtitle {
@@ -30,14 +31,17 @@ a {
     width: 80%;
     margin-left: 3%;
     word-wrap: break-word;
+
 }
 
 .articles {
     margin-left: 5%;
+
 }
 
 .single-post {
     margin-bottom: 5%;
     width: 50%;
     float: left;
+    text-align: justify;
 }

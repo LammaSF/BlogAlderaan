@@ -1,9 +1,11 @@
-<head>
-    <script src="//cdn.tinymce.com/4/tinymce.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
-</head>
+
 
 <div class="new-post-block">
+    <script type="text/javascript" src="../nicEdit.js"></script>
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+    </script>
+
     <h2 id="editor-title">new post</h2>
     <form id="post-form">
         <ul class="title-author">
