@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53cd3d9e-698f-4dae-a76f-23bffdd6ebb0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlogJavaScript/styles/new-post-style.css" afterPath="$PROJECT_DIR$/BlogJavaScript/styles/new-post-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlogJavaScript/index.html" afterPath="$PROJECT_DIR$/BlogJavaScript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlogJavaScript/scripts/controllers/postController.js" afterPath="$PROJECT_DIR$/BlogJavaScript/scripts/controllers/postController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlogJavaScript/templates/create-post.html" afterPath="$PROJECT_DIR$/BlogJavaScript/templates/create-post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlogJavaScript/styles/main-style.css" afterPath="$PROJECT_DIR$/BlogJavaScript/styles/main-style.css" />
     </list>
     <ignored path="04. Software-Technologies-Blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,18 +27,18 @@
       <file leaf-file-name="main-style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlogJavaScript/styles/main-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="470">
+              <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create-comment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/create-comment.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlogJavaScript/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="66">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -51,7 +47,7 @@
       <file leaf-file-name="form-style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlogJavaScript/styles/form-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-915">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -71,7 +67,7 @@
       <file leaf-file-name="welcome-guest.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/welcome-guest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
+            <state relative-caret-position="770">
               <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding />
             </state>
@@ -81,18 +77,8 @@
       <file leaf-file-name="welcome-user.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/welcome-user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-211">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-commnt-style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlogJavaScript/styles/new-commnt-style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -111,7 +97,7 @@
       <file leaf-file-name="homeController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlogJavaScript/scripts/controllers/homeController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-796">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -123,6 +109,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="9" column="72" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create-post.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/create-post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -171,8 +167,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-32" />
-    <option name="y" value="50" />
+    <option name="x" value="-45" />
+    <option name="y" value="134" />
     <option name="width" value="1932" />
     <option name="height" value="1048" />
   </component>
@@ -481,14 +477,15 @@
       <workItem from="1472313920300" duration="3948000" />
       <workItem from="1472325607788" duration="3084000" />
       <workItem from="1472329665664" duration="1236000" />
+      <workItem from="1472342950068" duration="1139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19495000" />
+    <option name="totallyTimeSpent" value="20634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-32" y="50" width="1932" height="1048" extended-state="0" />
+    <frame x="-45" y="134" width="1932" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24708377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -740,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/create-post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/recent-posts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -774,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,15 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="249" column="20" selection-start-line="249" selection-start-column="20" selection-end-line="249" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlogJavaScript/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,31 +816,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BlogJavaScript/scripts/controllers/homeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/nav-create-comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/nav-create-comment.html" />
     <entry file="file://$PROJECT_DIR$/BlogJavaScript/styles/form-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-915">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -876,24 +841,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/welcome-guest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
+        <state relative-caret-position="770">
           <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/articles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/create-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlogJavaScript/templates/welcome-user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlogJavaScript/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlogJavaScript/styles/main-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="470">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
           <folding />
         </state>
       </provider>
