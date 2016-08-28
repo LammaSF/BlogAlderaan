@@ -1,10 +1,7 @@
-
+<body class="yui-skin-sam">
 
 <div class="new-post-block">
-    <script type="text/javascript" src="../nicEdit.js"></script>
-    <script type="text/javascript">
-        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
-    </script>
+    <script src="//cdn.ckeditor.com/4.5.10/standard/ckeditor.js"></script>
 
     <h2 id="editor-title">new post</h2>
     <form id="post-form">
@@ -18,12 +15,15 @@
                 <input type="text" value="" placeholder="Author" id="author">
             </li>
         </ul>
-        <textarea class="content-field" placeholder="Content" id="content"></textarea>
-
+        <textarea name = 'content' class="content-field" placeholder="Content" id="content"></textarea>
+        <script>
+            CKEDITOR.replace( 'content' );
+        </script>
         <br>
         <button type="button" id="create-new-post-request-button">Publish</button>
     </form>
 </div>
+</body>
 
 <footer>
     <p class="footer-text">&copy; Software University Foundation, No Rights Reserved</p>
