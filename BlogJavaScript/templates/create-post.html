@@ -1,13 +1,6 @@
 <head>
-    <script>
-        tinymce.init({
-        selector: "textarea",
-        setup: function (editor) {
-            editor.on('change', function () {
-                editor.save();
-            });
-        }
-    });</script>
+    <script src="//cdn.tinymce.com/4/tinymce.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
 </head>
 
 <div class="new-post-block">
