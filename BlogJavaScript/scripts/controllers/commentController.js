@@ -6,7 +6,9 @@ class CommentController {
         this._baseServiceUrl = baseUrl + "/appdata/" + appKey + "/comments/";
     }
 
-
+    showCreateCommentPage(isLoggedIn) {
+        this._commentView.showCreateCommentPage(isLoggedIn);
+    }
 
     createComment(requestData) {
         if (requestData.content.length < 5) {
@@ -31,7 +33,7 @@ class CommentController {
             function success(data) {
                 let commentList = [];
                 for (let comment of data) {
-                    if (comment['articleid'] == requestData['_id'])  {
+                    if (comment['postid'] == requestData['_id'])  {
                         commentList.push(comment);
                     }
                 }

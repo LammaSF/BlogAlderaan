@@ -37,7 +37,7 @@ class CommentView {
                         author: commentAuthor,
                         content: commentContent,
                         date: date,
-                        articleid: sessionStorage.getItem('id')
+                       articleid: sessionStorage.getItem('id')
                     };
                     triggerEvent('createComment', data);
                 }
