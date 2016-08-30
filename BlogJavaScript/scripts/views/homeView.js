@@ -19,7 +19,7 @@ class HomeView {
                 let renderedPosts = Mustache.render(template, blogPosts);
                 $('.articles').html(renderedPosts);
             });
-
+            
             $.get('templates/recent-posts.html', function (template) {
                 let recentPosts = {
                     recentPosts: sideBarData
