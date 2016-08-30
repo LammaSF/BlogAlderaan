@@ -2,10 +2,14 @@
 <li class="single-post">
     <article id="post-{{postId}}">
         <div class="dot">&nbsp;</div>
-        <h3 class="title">{{title}}</h3>
+        <a href="#/post-{{postId}}"><h3 class="title">{{title}}</h3></a>
         <p class="subtitle">Posted on {{date}} by {{author}}</p>
-        <p class="content">{{content}}</p>
+        <p class="content">{{{content}}}</p>
     </article>
-    <a href="#/create/comment/{{_id}}" class="links">Add Comment</a>
 </li>
 {{/blogPosts}}
+<div class="row">
+    {{#pages}}
+    <a class="btn  btn-default btn-danger col" style="background-color:red !important; color:white;" href="#/?page={{.}}">Page:{{.}}</a>
+    {{/pages}}
+</div>
