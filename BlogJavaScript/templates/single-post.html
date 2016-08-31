@@ -1,25 +1,11 @@
-{{#singleArticle}}
-<li class="single-post">
-    <article id="post-{{postId}}">
-        <div class="dot">&nbsp;</div>
-        <h3 class="title">{{title}}</h3>
-        <p class="subtitle">Posted on {{date}} by {{author}}</p>
-        <p class="content">{{{content}}}</p>
-    </article>
-</li>
-{{#selectedArticle}}
-<article id="single-post">
+{{#singlePost}}
+<li class="ssingle-post">
+
+    <div class="dot">&nbsp;</div>
     <h3 class="title">{{title}}</h3>
     <p class="subtitle">Posted on {{date}} by {{author}}</p>
-    <p class="content">{{content}}</p>
-</article>
-<br>
-{{/selectedArticle}}
-{{#selectedArticleComments}}
-<!--<div id="comment-form">-->
-<p class="comment-author">{{author}}</p>
-<p class="comment-date">{{date}}</p>
-<p class="comment-content">{{content}}</p>
-<!--</div>-->
-<br>
-{{/selectedArticleComments}}
+    <p class="content">{{{content}}}</p>
+
+</li>
+{{/singlePost}}
+

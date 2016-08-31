@@ -114,6 +114,20 @@ class HomeController {
             _that._homeView.showAboutPage();
         })
     }
+    getArticle() {
+        let _that = this;
+        let articleid = sessionStorage.getItem('id');
+        let requestUrl = this._baseServiceUrl + "/appdata/" + this._appId + "/posts/" + articleid;
+
+
+        _that._requester.get(requestUrl,
+            function success(article) {
+                _that._homeView.showSinglePost(article);
+            },
+            function error(data) {
+                showPopup('error', "Error loading this article!");
+            });
+    }
 
 
 

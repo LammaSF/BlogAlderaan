@@ -61,7 +61,13 @@
             fullname: sessionStorage['fullname']
         };
 
+
+
         postController.showCreatePostPage(data, authService.isLoggedIn());
+    });
+    onRoute("#/post/:id", function () {
+        sessionStorage.setItem('id', this.params['id']);
+        homeController.getArticle();
     });
     onRoute("#/about", function () {
         homeView.showAboutPage(authService.isLoggedIn());

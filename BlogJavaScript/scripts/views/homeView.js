@@ -94,11 +94,14 @@ class HomeView {
         });
     }
 
-    showSinglePost(data){
+    showSinglePost(article) {
+        let _that = this;
+        let singlePost = {
+            singlePost: article
+        };
+
+
         $.get('templates/single-post.html', function (template) {
-            let singlePost = {
-                singlePost: data
-            };
 
             let renderedSinglePost = Mustache.render(template, singlePost);
             $('.single-post').html(renderedSinglePost);
