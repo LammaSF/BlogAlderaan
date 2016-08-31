@@ -93,6 +93,19 @@ class HomeView {
             $(_that._mainContentSelector).html(renderMainContent);
         });
     }
+    showCommentPage() {
+        let _that = this;
+        let templateUrl;
+
+        $.get(templateUrl,function (template) {
+            let navSelector = Mustache.render(template,null);
+            $(_that._selector).html(navSelector);
+        });
+        $.get('templates/chat.html', function (template) {
+            let renderMainContent = Mustache.render(template, null);
+            $(_that._mainContentSelector).html(renderMainContent);
+        });
+    }
 
     showSinglePost(article) {
         let _that = this;

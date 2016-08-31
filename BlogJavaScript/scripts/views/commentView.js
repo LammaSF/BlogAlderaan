@@ -1,47 +1,41 @@
 class CommentView {
-    constructor(selector, mainContentSelector) {
-        this._selector = selector;
+
+    constructor(wrapperSelector, mainContentSelector) {
+        this._wrapperSelector = wrapperSelector;
         this._mainContentSelector = mainContentSelector;
     }
 
-    showCreateCommentPage(isLoggedIn) {
+    showCreateCommentPage(data, isLoggedIn) {
         let _that = this;
+        let templateUrl = isLoggedIn ? "templates/form-user.html" : "templates/form-guest.html";
 
-        let templateUrl = '';
+        $.get(templateUrl, function(template) {
+            let renderedWrapper = Mustache.render(template, null);
+            $(_that._wrapperSelector).html(renderedWrapper);
 
-        
+            $.get('templates/create-comment.html', function (template) {
+                var renderedContent = Mustache.render(template, null);
+                $(_that._mainContentSelector).html(renderedContent);
 
-        $.get(templateUrl, function (template) {
-            let navSelector = Mustache.render(template, null);
-            $(_that._selector).html(navSelector);
-        });
+                $('#author').val(data.fullname);
 
-        $.get('templates/form-create-comment.html', function (template) {
-            var renderMainContent = Mustache.render(template, null);
-            $(_that._mainContentSelector).html(renderMainContent);
+                $('#create-new-comment-request-button').on('click', function (ev) {
+                    let title = $('#title').val();
+                    let author = $('#author').val();
+                    let content = $('#content').val();
+                    let date = moment().format("MMMM Do YYYY");
 
-            $('#commentAuthor').val(sessionStorage.getItem('fullname'));
-
-            $('#create-new-comment-request-button').on('click', function (ev) {
-
-                if (isLoggedIn != true) {
-                    showPopup('error', "Please log in to be able to comment articles");
-                    redirectUrl("#/login");
-                }
-
-                else {
-                    let commentAuthor = $('#commentAuthor').val();
-                    let commentContent = $('#commentContent').val();
-                    let date = moment().format("MMMM Do YYYY, h:mm A");
                     let data = {
-                        author: commentAuthor,
-                        content: commentContent,
-                        date: date,
-                       articleid: sessionStorage.getItem('id')
+                        title: title,
+                        author: author,
+                        content: content,
+                        date: date
                     };
+
                     triggerEvent('createComment', data);
-                }
+                });
             });
-        })
+        });
     }
+    
 }

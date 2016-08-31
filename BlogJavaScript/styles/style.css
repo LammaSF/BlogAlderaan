@@ -251,13 +251,9 @@ header {
 }
 
 footer {
-
-    width: 100%;
-    position: fixed;
-    bottom: 20px;
+    margin: 30px;
     text-align: center;
 }
-
 /* LOADER STYLING */
 .modal {
     display: none;

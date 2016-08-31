@@ -11,7 +11,7 @@ class HomeController {
 
         currentPage = currentPage || 1;
 
-        console.log(' hey we have tranfered it guste page ' + currentPage)
+        console.log(' hey we have transfered it guest page ' + currentPage)
         let _that = this;
 
         let recentPosts = [];
@@ -41,7 +41,7 @@ class HomeController {
                 var postsForCurrentPage = data.slice(startIndexIncluding , endIndexNotIncluding);
                 console.log('Posts for currentPage ' + currentPage + ">>> " + postsForCurrentPage);
 
-                for (let i = 0; i < data.length && i < 5; i++) {
+                for (let i = 0; i < data.length && i < 3; i++) {
                     data[i].postId = currentId;
                     currentId++;
                     recentPosts.push(data[i]);
@@ -114,6 +114,12 @@ class HomeController {
             _that._homeView.showAboutPage();
         })
     }
+    showCommentPage() {
+        let _that = this;
+        $('onclick',function () {
+            _that._homeView.showCommentPage();
+        })
+    }
     getArticle() {
         let _that = this;
         let articleid = sessionStorage.getItem('id');
@@ -128,7 +134,6 @@ class HomeController {
                 showPopup('error', "Error loading this article!");
             });
     }
-
 
 
 }
