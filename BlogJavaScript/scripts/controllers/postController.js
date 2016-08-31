@@ -33,4 +33,7 @@ class PostController {
                 showPopup('error', "An error has occurred while attempting to create a new post.");
             });
     }
+    showSelectedArticle(data) {
+        this._postView.showSelectedArticle(data);
+    }
 }

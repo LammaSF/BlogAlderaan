@@ -54,7 +54,13 @@ class HomeController {
             }
         );
     }
+    showSinglePost(data){
+        let _that = this;
+        let requestUrl = this._baseServiceUrl + "/appdata/" + this._appId + "/posts";
 
+
+        _that._homeView.showSinglePost(data);
+    }
     showUserPage(currentPage, postsPerPage) {
 
         currentPage = currentPage || 1;
@@ -102,12 +108,13 @@ class HomeController {
             }
         );
     }
-    
-    showSinglePost(data){
+    showAboutPage() {
         let _that = this;
-        let requestUrl = this._baseServiceUrl + "/appdata/" + this._appId + "/posts";
-
-
-        _that._homeView.showSinglePost(data);
+        $('onclick',function () {
+            _that._homeView.showAboutPage();
+        })
     }
+
+
+
 }

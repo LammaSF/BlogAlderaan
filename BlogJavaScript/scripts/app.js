@@ -63,6 +63,9 @@
 
         postController.showCreatePostPage(data, authService.isLoggedIn());
     });
+    onRoute("#/about", function () {
+        homeView.showAboutPage(authService.isLoggedIn());
+    });
 
     bindEventHandler('login', function (ev, data) {
         userController.login(data);
@@ -76,5 +79,5 @@
         postController.createPost(data);
     });
 
-    run('#/');
+    run("#/");
 })();
