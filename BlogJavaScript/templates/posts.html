@@ -8,8 +8,8 @@
     </article>
 </li>
 {{/blogPosts}}
-<div class="row">
+<div class="row-paging">
     {{#pages}}
-    <a class="btn  btn-default btn-danger col" style="background-color:red !important; color:white;" href="#/?page={{.}}">Page:{{.}}</a>
+    <a class="button-paging" style="color:white;" href="#/?page={{.}}">Page {{.}}</a>
     {{/pages}}
 </div>
