@@ -95,7 +95,7 @@ class HomeController {
                 var postsForCurrentPage = data.slice(startIndexIncluding , endIndexNotIncluding);
                 console.log('Posts for currentPage ' + currentPage + ">>> " + postsForCurrentPage);
 
-                for (let i = 0; i < data.length && i < 5; i++) {
+                for (let i = 0; i < data.length && i < 3; i++) {
                     data[i].postId = currentId;
                     currentId++;
                     recentPosts.push(data[i]);

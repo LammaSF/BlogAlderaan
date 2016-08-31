@@ -196,7 +196,7 @@ header {
     top: 0;
     left: 0;
     bottom: 0;
-    position: absolute;
+    position: fixed;
 }
 
 .logo {
@@ -251,9 +251,10 @@ header {
 }
 
 footer {
+
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 20px;
     text-align: center;
 }
 
