@@ -53,5 +53,13 @@
     border: 3px solid #06c0ab;
 }
 
+.row-paging{
+    margin:30px;
+}
 
+.button-paging{
+    background-color: #e69b2e;
+    border-radius:8px;
+    padding: 5px;
+}
 
