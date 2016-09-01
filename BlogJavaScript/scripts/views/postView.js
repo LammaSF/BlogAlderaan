@@ -40,8 +40,8 @@ class PostView {
     showSelectedArticle(article) {
         let _that = this;
         let theData = {
-            selectedArticle: article,
-            selectedArticleComments: article['commentsList']
+            selectedArticle: article
+           
         };
         $.get('templates/single-post.html', function (template) {
             var renderMainContent = Mustache.render(template, theData);

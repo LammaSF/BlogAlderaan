@@ -34,7 +34,8 @@ class CommentController {
             });
     }
     showSelectedComment(data) {
-        this._postView.showSelectedComment(data);
+        this._commentView.showSelectedComment(data);
     }
+    
   
 }

@@ -36,4 +36,25 @@ class PostController {
     showSelectedArticle(data) {
         this._postView.showSelectedArticle(data);
     }
+
+    deleteArticle(articleId) {
+
+        let requestUrl = this._baseServiceUrl + articleId;
+
+        let headers = {};
+        headers['Authorization'] = "Kinvey " + sessionStorage.getItem('_authToken');
+        headers['Content-Type'] = "application/json";
+        let requestData = {
+            headers: headers
+        };
+
+        this._requester.delete(requestUrl, requestData,
+            function success(response) {
+                showPopup("success", "You have successfully deleted this article");
+                redirectUrl("#/home")
+            },
+            function error(response) {
+                showPopup("error", "You don't have authorization to delete this article");
+            });
+    }
 }

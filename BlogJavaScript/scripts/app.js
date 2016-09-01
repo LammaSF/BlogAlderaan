@@ -23,6 +23,9 @@
     let postView = new PostView(selector, mainContentSelector);
     let postController = new PostController(postView, requester, baseUrl, appId);
 
+    let chatView = new ChatView(selector, mainContentSelector);
+    let chatController = new ChatController(chatView, requester, baseUrl, appId);
+
     let commentView = new CommentView(selector, mainContentSelector);
     let commentController = new CommentController(commentView, requester, baseUrl, appId);
     initEventServices();
@@ -63,14 +66,9 @@
             fullname: sessionStorage['fullname']
         };
 
-
-
-
         postController.showCreatePostPage(data, authService.isLoggedIn());
     });
-    onRoute("#/chat", function () {
-        homeController.showCommentPage();
-    });
+
     onRoute('#/comments/create', function () {
         let data = {
             fullname: sessionStorage['fullname']
@@ -82,6 +80,7 @@
         sessionStorage.setItem('id', this.params['id']);
         homeController.getArticle();
     });
+
     onRoute("#/about", function () {
         homeView.showAboutPage(authService.isLoggedIn());
     });
@@ -90,6 +89,9 @@
    });
     onRoute("#/comments/create", function () {
         commentView.showCreateCommentPage(authService.isLoggedIn());
+    });
+    onRoute('#/delete/article/', function (postId) {
+            postController.deleteArticle(postId.params.id);
     });
 
     bindEventHandler('login', function (ev, data) {
@@ -106,5 +108,9 @@
     bindEventHandler('createComment', function (ev, data) {
         commentController.createComment(data);
     });
+    bindEventHandler('chat', function (ev, data) {
+        chatController.showCommentPage(data);
+    });
+   
     run("#/");
 })();
