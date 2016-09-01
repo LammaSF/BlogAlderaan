@@ -50,7 +50,7 @@
     font: 12px Lato;
     font-weight: 100;
     outline: none;
-    border: 3px solid #06c0ab;
+    border: 3px solid #e69b2e;
 }
 
 .row-paging{
@@ -62,4 +62,17 @@
     border-radius:8px;
     padding: 5px;
 }
-
+#edit-article-request-button {
+    display: inline-block;
+    font: 15px Lato;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 340px;
+    border: none;
+    border-radius: 15px;
+    width: 170px;
+    text-align: center;
+}

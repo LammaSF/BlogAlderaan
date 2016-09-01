@@ -57,4 +57,48 @@ class PostController {
                 showPopup("error", "You don't have authorization to delete this article");
             });
     }
+    editArticlePage(data) {
+        let requestUrl = this._baseServiceUrl + data;
+        let _that = this;
+        this._requester.get(requestUrl,
+            function success(data) {
+                showPopup('success', "Success loading this article!");
+                _that._articleView.showEditArticlePage(data);
+            },
+            function error() {
+                showPopup('error', "Error loading this article!");
+            });
+    }
+
+    editArticle(requestData) {
+        if (requestData.title.length < 10) {
+            showPopup('error', "Article title must consist of at least 10 symbols.");
+            return;
+        }
+
+        if (requestData.content.length < 50) {
+            showPopup('error', "Article content must consist of at least 50 symbols.");
+            return;
+        }
+        let requestUrl = this._baseServiceUrl + requestData._id;
+        let articleTitle = requestData.title;
+        let articleText = requestData.content;
+        let articleAuthor = requestData.author;
+        let date = requestData.date;
+
+        let request = {
+            title: articleTitle,
+            content: articleText,
+            author: articleAuthor,
+            date: date,
+        };
+        this._requester.put(requestUrl, request,
+            function success() {
+                showPopup("success", "You have successfully edited this article");
+                redirectUrl("#/home")
+            },
+            function error() {
+                showPopup("error", "You don't have authorization to edit this article");
+            });
+    }
 }

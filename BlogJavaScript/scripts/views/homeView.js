@@ -89,13 +89,13 @@ class HomeView {
             $(_that._selector).html(navSelector);
         });
         $.get('templates/about.html', function (template) {
-            let renderMainContent = Mustache.render(template, null);
-            $(_that._mainContentSelector).html(renderMainContent);
+            let renderAboutContent = Mustache.render(template, null);
+            $(_that._mainContentSelector).html(renderAboutContent);
         });
     }
     showCommentPage() {
         let _that = this;
-        let templateUrl;
+        let templateUrl="templates/nav-user.html";
 
         $.get(templateUrl,function (template) {
             let navSelector = Mustache.render(template,null);
@@ -112,7 +112,6 @@ class HomeView {
         let singlePost = {
             singlePost: article
         };
-
 
         $.get('templates/single-post.html', function (template) {
 

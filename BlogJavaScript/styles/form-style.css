@@ -1,12 +1,12 @@
-#chat{
-    background-color: lightslategray;
 
-}
 .wrapper {
    // background: url("../images/background.jpg") no-repeat center center fixed;
    // background-size: contain;
 }
-
+@font-face {
+    font-family: myFirstFont;
+    src: url(got.ttf);
+}
 .user-login-block {
     border-radius: 15px;
     background-color: #f2f2f2;
@@ -50,7 +50,7 @@ input:focus {
 }
 
 button {
-    font: 16px Lato;
+    font: 16px myFirstFont;
     color: white;
     background-color: #e69b2e;
     padding: 8px;

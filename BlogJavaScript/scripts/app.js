@@ -91,7 +91,15 @@
         commentView.showCreateCommentPage(authService.isLoggedIn());
     });
     onRoute('#/delete/article/', function (postId) {
-            postController.deleteArticle(postId.params.id);
+        postController.deleteArticle(postId.params.id);
+    });
+    onRoute("#/edit/article/", function (articleId) {
+        articleController.editArticlePage(articleId.params.id);
+         articleController.showSelectedArticle(data);
+         });
+
+    bindEventHandler('editArticle', function (event, data) {
+        articleController.editArticle(data);
     });
 
     bindEventHandler('login', function (ev, data) {

@@ -11,7 +11,10 @@ a {
     border-radius: 40px;
     background-color: #e69b2e;
 }
-
+@font-face {
+    font-family: myFirstFont;
+    src: url(got.ttf);
+}
 .title {
     font: 32px Oswald;
     font-weight: 600;
@@ -42,9 +45,10 @@ a {
 
 .single-post {
     margin-bottom: 5%;
-    width: 50%;
+    width: 49%;
     float: left;
     text-align: justify;
+    padding-right: 10px;
 }
 
 .links {
@@ -58,4 +62,8 @@ a {
 
 .links:hover {
     color: orangered;
+}
+.ssingle-post{
+    padding-left: 30px;
+    text-align: justify;
 }

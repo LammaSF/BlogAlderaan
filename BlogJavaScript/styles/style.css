@@ -162,9 +162,11 @@ hr {
 main {
     margin: 0 auto;
     min-height: inherit;
-    width: 80%;
+    width: 77%;
     position: relative;
     float: right;
+   padding-right: 25px;
+    text-align: justify;
 }
 
 header {
@@ -173,12 +175,16 @@ header {
     width: 80%;
     text-align: center;
 }
-
+@font-face {
+    font-family: myFirstFont;
+    src: url(got.ttf);
+}
 .blog-title {
-    font: 54px Oswald;
+    font: 54px myFirstFont;
     font-weight: 600;
     margin: 0 auto 50px;
     color: #565656;
+    padding-top: 10px;
     text-transform: uppercase;
     text-align: center;
     border-bottom: 8px solid #e69b2e;
@@ -190,7 +196,7 @@ header {
     height: 100%;
     background-color: #e69b2e;
     color: white;
-    font: 32px Lato;
+    font: 30px myFirstFont;
     font-weight: 100;
     text-align: center;
     top: 0;
@@ -247,7 +253,7 @@ header {
 
 .single-recent-post {
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* LOADER STYLING */
