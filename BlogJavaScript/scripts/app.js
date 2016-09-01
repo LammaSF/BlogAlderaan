@@ -23,6 +23,8 @@
     let postView = new PostView(selector, mainContentSelector);
     let postController = new PostController(postView, requester, baseUrl, appId);
 
+    let commentView = new CommentView(selector, mainContentSelector);
+    let commentController = new CommentController(commentView, requester, baseUrl, appId);
     initEventServices();
 
     onRoute("#/", function () {
@@ -63,7 +65,18 @@
 
 
 
+
         postController.showCreatePostPage(data, authService.isLoggedIn());
+    });
+    onRoute("#/chat", function () {
+        homeController.showCommentPage();
+    });
+    onRoute('#/comments/create', function () {
+        let data = {
+            fullname: sessionStorage['fullname']
+        };
+
+        commentController.showCreateCommentPage(data, authService.isLoggedIn());
     });
     onRoute("#/post/:id", function () {
         sessionStorage.setItem('id', this.params['id']);
@@ -71,6 +84,12 @@
     });
     onRoute("#/about", function () {
         homeView.showAboutPage(authService.isLoggedIn());
+    });
+    onRoute("#/chat", function () {
+        homeView.showCommentPage(authService.isLoggedIn());
+   });
+    onRoute("#/comments/create", function () {
+        commentView.showCreateCommentPage(authService.isLoggedIn());
     });
 
     bindEventHandler('login', function (ev, data) {
@@ -84,6 +103,8 @@
     bindEventHandler('createPost', function (ev, data) {
         postController.createPost(data);
     });
-
+    bindEventHandler('createComment', function (ev, data) {
+        commentController.createComment(data);
+    });
     run("#/");
 })();

@@ -250,10 +250,6 @@ header {
     font-size: 18px;
 }
 
-footer {
-    margin: 30px;
-    text-align: center;
-}
 /* LOADER STYLING */
 .modal {
     display: none;

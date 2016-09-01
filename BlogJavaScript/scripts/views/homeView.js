@@ -117,7 +117,7 @@ class HomeView {
         $.get('templates/single-post.html', function (template) {
 
             let renderedSinglePost = Mustache.render(template, singlePost);
-            $('.single-post').html(renderedSinglePost);
+            $('.main-content').html(renderedSinglePost);
         });
     }
 }

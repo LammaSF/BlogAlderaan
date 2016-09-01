@@ -1,15 +1,9 @@
-<div class="row-paging">
-    {{#pages}}
-    <a class="button-paging" style="color:white;" href="#/?page={{.}}">Page {{.}}</a>
-    {{/pages}}
-</div>
-
 {{#blogComments}}
 <li class="single-comment">
-    <article id="post-{{postId}}">
+    <article id="comment-{{commentId}}">
         <div class="dot">&nbsp;</div>
-        <a href="#/post/{{_id}}"><h3 class="title">{{title}}</h3></a>
-        <p class="subtitle">Posted on {{date}} by {{author}}</p>
+        <a href="#/comment/{{_id}}"><h3 class="title">{{title}}</h3></a>
+        <p class="subtitle">Comments on {{date}} by {{author}}</p>
         <p class="content">{{{content}}}</p>
     </article>
 </li>

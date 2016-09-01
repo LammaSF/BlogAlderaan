@@ -1,4 +1,7 @@
-
+<head>
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
+</head>
 <div class="new-post-block">
     <h2 id="editor-title">new post</h2>
     <form id="post-form">
@@ -23,11 +26,9 @@
                 }
             });
         </script>
+
         <br>
         <button type="button" id="create-new-post-request-button">Publish</button>
     </form>
 </div>
 
-<footer>
-    <p class="footer-text">&copy; Software University Foundation, No Rights Reserved</p>
-</footer>

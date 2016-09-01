@@ -1,6 +1,10 @@
+#chat{
+    background-color: lightslategray;
+
+}
 .wrapper {
-    /*background: url("../images/background.png") no-repeat center center fixed;*/
-    background-size: cover;
+   // background: url("../images/background.jpg") no-repeat center center fixed;
+   // background-size: contain;
 }
 
 .user-login-block {
@@ -72,3 +76,5 @@ button:hover {
 #register-title {
     width: 200px;
 }
+
+
