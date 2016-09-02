@@ -66,7 +66,7 @@ class PostView {
         });
 
 
-        $.get('templates/form-edit-article.html', function (template) {
+        $.get('templates/form-edit-post.html', function (template) {
 
             var renderMainContent = Mustache.render(template, null);
             $(_that._mainContentSelector).html(renderMainContent);

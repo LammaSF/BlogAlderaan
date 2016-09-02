@@ -63,7 +63,8 @@ a {
 .links:hover {
     color: orangered;
 }
-.ssingle-post{
-    padding-left: 30px;
+.ssingle-post {
+    padding-top: 20px;
+    padding-left: 10px;
     text-align: justify;
 }

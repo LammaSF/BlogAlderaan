@@ -82,7 +82,11 @@
     });
 
     onRoute("#/about", function () {
+        let data = {
+            fullname: sessionStorage['fullname']
+        };
         homeView.showAboutPage(authService.isLoggedIn());
+
     });
     onRoute("#/chat", function () {
         homeView.showCommentPage(authService.isLoggedIn());
@@ -92,15 +96,13 @@
     });
     onRoute('#/delete/article/', function (postId) {
         postController.deleteArticle(postId.params.id);
+        sessionStorage.setItem('id', this.params['id']);
     });
-    onRoute("#/edit/article/", function (articleId) {
-        articleController.editArticlePage(articleId.params.id);
-         articleController.showSelectedArticle(data);
-         });
+    onRoute("#/edit/article/", function (postId) {
+        postController.editArticlePage(postId.params.id);
+        postController.showSelectedArticle(data);
+    });
 
-    bindEventHandler('editArticle', function (event, data) {
-        articleController.editArticle(data);
-    });
 
     bindEventHandler('login', function (ev, data) {
         userController.login(data);
@@ -118,6 +120,9 @@
     });
     bindEventHandler('chat', function (ev, data) {
         chatController.showCommentPage(data);
+    });
+    bindEventHandler('editArticle', function (event, data) {
+        postController.editArticle(data);
     });
    
     run("#/");

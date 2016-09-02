@@ -33,8 +33,8 @@ class PostController {
                 showPopup('error', "An error has occurred while attempting to create a new post.");
             });
     }
-    showSelectedArticle(data) {
-        this._postView.showSelectedArticle(data);
+    showSelectedArticle(article) {
+        this._postView.showSelectedArticle(article);
     }
 
     deleteArticle(articleId) {
@@ -63,7 +63,7 @@ class PostController {
         this._requester.get(requestUrl,
             function success(data) {
                 showPopup('success', "Success loading this article!");
-                _that._articleView.showEditArticlePage(data);
+                _that._postView.showEditArticlePage(data);
             },
             function error() {
                 showPopup('error', "Error loading this article!");
@@ -90,7 +90,7 @@ class PostController {
             title: articleTitle,
             content: articleText,
             author: articleAuthor,
-            date: date,
+            date: date
         };
         this._requester.put(requestUrl, request,
             function success() {
