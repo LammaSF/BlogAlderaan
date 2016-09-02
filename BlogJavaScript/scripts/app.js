@@ -88,6 +88,13 @@
         homeView.showAboutPage(authService.isLoggedIn());
 
     });
+    onRoute("#/thebooks", function () {
+        let data = {
+            fullname: sessionStorage['fullname']
+        };
+        homeView.showTheBooksPage(authService.isLoggedIn());
+
+    });
     onRoute("#/chat", function () {
         homeView.showCommentPage(authService.isLoggedIn());
    });

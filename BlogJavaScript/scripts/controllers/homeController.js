@@ -109,9 +109,15 @@ class HomeController {
         );
     }
     showAboutPage() {
+    let _that = this;
+    $('onclick',function () {
+        _that._homeView.showAboutPage();
+    })
+}
+    showTheBooksPage() {
         let _that = this;
         $('onclick',function () {
-            _that._homeView.showAboutPage();
+            _that._homeView.showTheBooksPage();
         })
     }
     showCommentPage() {

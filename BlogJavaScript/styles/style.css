@@ -207,7 +207,7 @@ header {
 
 .logo {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .logo img{
@@ -229,8 +229,8 @@ header {
 }
 
 .single-menu-element-link:hover {
-    font-weight: 900;
-    transition: background 0.7s ease,
+    font-weight: 300;
+  //  transition: background 0.7s ease,
     padding 0.5s linear;
 }
 
@@ -365,4 +365,8 @@ header {
     50% { transform: rotate(360deg); }
     75% { transform: rotate(180deg); }
     100% { transform: rotate(0deg); }
+}
+
+img.displayed {
+    padding-left: 100px;
 }

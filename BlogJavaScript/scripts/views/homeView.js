@@ -81,6 +81,19 @@ class HomeView {
         });
     }
     showAboutPage() {
+    let _that = this;
+    let templateUrl;
+
+    $.get(templateUrl,function (template) {
+        let navSelector = Mustache.render(template,null);
+        $(_that._selector).html(navSelector);
+    });
+    $.get('templates/about.html', function (template) {
+        let renderAboutContent = Mustache.render(template, null);
+        $(_that._mainContentSelector).html(renderAboutContent);
+    });
+}
+    showTheBooksPage() {
         let _that = this;
         let templateUrl;
 
@@ -88,7 +101,7 @@ class HomeView {
             let navSelector = Mustache.render(template,null);
             $(_that._selector).html(navSelector);
         });
-        $.get('templates/about.html', function (template) {
+        $.get('templates/about-books.html', function (template) {
             let renderAboutContent = Mustache.render(template, null);
             $(_that._mainContentSelector).html(renderAboutContent);
         });
